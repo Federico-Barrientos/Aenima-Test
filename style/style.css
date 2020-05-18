@@ -1,0 +1,610 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+/*/*NAVBAR*/
+.nav{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+.nav img{
+    width: 82px;
+    height: 15px;
+    margin: 16px 0 18px 15px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 0 8px 37px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2A3037;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: -12px;
+    right: 24px;
+    font-size: 45px;
+    font-weight: 300;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size:25px;
+    cursor:pointer;
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    margin-left: 50px;
+  }
+
+  .nav-desktop{
+      display: none;
+  }
+
+/*INTRO*/
+.intro{ 
+        background: url(../assets/img/Viajes_Hero.jpg); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position-x: 35%;
+       }
+
+.intro .container{
+    padding: 202px 0 258px 0;
+    width: calc(100% - 74px);
+    margin: 0 auto;
+}
+
+.intro h1,p{
+    color: white;
+}
+
+.intro h1{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.intro hr{
+    border-top: 3px solid white;
+    width: 280px;
+}
+
+.intro p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 34px; 
+}
+
+.intro .p-desktop{
+    display: none;
+}
+.intro img{
+    height: 17px;
+    width: 12px;
+    padding-right: 5px;
+}
+
+.nav-slider{
+    position: relative;
+    bottom: 34px;
+    left: -54px;
+}
+
+.nav-slider img{
+    width: 139px;
+    height: 48px;
+    padding: 0;
+}
+
+.next-adventure{
+    display: none;
+}
+
+/*TENDENCIAS*/
+
+.tendencias{
+    background-color: #EBEBEB;
+    padding-bottom: 100px;
+}
+
+.tendencias .card{
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    height: 314px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.new{
+    background-color: #FA6980;
+    width: 69px;
+    height: 27px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -18px;
+    left: 34px;
+}
+
+.new h6{
+    color: white;
+}
+
+.card-group .card:nth-child(2){
+    display: none;
+}
+
+.card-group .card:last-child{
+    display: none;
+}
+
+.tendencias .container{
+    padding: 71.5px 0 48px 0;
+    width: calc(100% - 74px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tendencias p{
+    color: black;
+}
+
+.tendencias h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #2A3037;
+    padding-bottom: 30px;
+    margin: 0;
+    align-self: normal;
+}
+
+.card img{
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card-cont{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 54px);
+    margin: 0 auto;
+    }
+
+.card-cont h4{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #2A3037;
+    padding-bottom: 10px;
+}
+
+.card-cont p{
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #7A838D;
+}
+
+/*BLOG*/
+
+.blog{
+    margin: 0 auto;
+    max-width: 600px
+}
+
+.blog .container{
+    margin-top: -104px;
+}
+
+.blog p span{
+    display: none;
+}
+
+.blog-item-01{
+    background: url(../assets/img/articulo_big_01.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 41px;
+    border-radius: 6px;
+}
+
+.blog-item-02{
+    background: url(../assets/img/articulo_big_02.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 41px;
+    border-radius: 6px;
+}
+
+.blog h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #2A3037;
+    margin: 0;
+    padding: 0 0 30px 37px;
+}
+
+.blog-item h4{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 39px 0 0 36px;
+    position: relative;
+}
+
+.blog-item h3{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 34px;
+    padding-left: 40px;
+}
+
+.blog-time{
+    display: flex;
+    padding: 18px 0 40px 40px;
+}
+
+.blog-time img{
+    height: 16px;
+    width: 16px;
+    padding-right: 5px;
+}
+
+.blog.time p{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 26px;
+    color: #CBD0D3;
+}
+
+.blog-sec{
+    display: none;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #2A3037;
+}
+
+footer .container{
+    width: calc(100% - 70px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.footer-l img{
+    height: 13px;
+    width: 70px;
+}
+
+.footer-r img{
+    padding-left: 13px;
+}
+
+/*DESKTOP*/
+@media (min-width:1024px){
+
+/*NAV*/
+    .nav-desktop{
+        display: inline-block;
+        padding-right: 140px;
+         padding-top: 20px;
+    }
+
+    .closebtn , .openbtn , .sidenav{ 
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        height: 60px;
+    }
+
+    .nav img{
+        margin-left: 137px;
+        width: 101px;
+        height: 18px;
+        margin-top: 20px;
+    }
+    .nav-desktop a{
+        text-decoration: none;
+    color: #2A3037;
+    font-size: 18px;
+    line-height: 13px;
+    font-weight: 600;
+    padding-left: 33px;
+    }
+
+    .nav-desktop a:hover{
+        color: #CBD0D3;
+    }
+/*INTRO*/
+    .next-adventure{
+        width: 260px;
+        height: 157px;
+        background: rgba(42, 48, 55, 0.5);
+        border: 2px dashed rgba(255, 255, 255, 1);
+        display: flex;
+        position: relative;
+        margin-left: 69%;
+        bottom: 70px;
+        flex-direction: column;
+        
+    }
+
+    .next-adventure-top{
+        display: flex;
+    }
+
+    .next-adventure img{
+        width: 6px;
+        height: 10px;
+        position: relative;
+        top: 30px;
+        padding-left: 10px;
+    }
+
+    .next-adventure .next-adventure-top h6{
+        color: rgba(250, 105, 128, 1);
+        font-size: 16px;
+        padding: 27px 0 12px 30px;
+    }
+
+    .next-adventure h6{
+        color: white;
+        font-size: 16px;
+        padding-bottom: 11px;
+        padding-left: 30px;
+}
+
+
+    .next-adventure p{
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: lighter;
+        padding: 0 30px;
+    }
+    
+    .intro .container{
+        width: calc(100% - 280px);
+        padding-top: 252px;
+    }
+
+    .intro .container img{
+        width: 24px;
+        height: 34px;
+    }
+
+    .intro .container h1{
+        font-size: 48px;
+        line-height: 42px;
+        padding-bottom: 30px;
+    }
+
+    .intro hr{
+        width: 571px;
+    }
+
+    .intro .container p{
+        padding-top: 25px;
+    }
+
+    .intro .p-desktop{
+        display: inline-block;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: normal;
+        max-width: 560px;
+    }
+
+    .intro .nav-slider{
+        bottom: -100px;
+        left: 0px;
+    }
+
+    .nav-slider img{
+        width: 189px;
+        height: 60px;
+    }
+/*TENDENCIAS*/
+    .tendencias{
+        padding-bottom: 250px;
+    }
+    .tendencias .container{
+        width: calc(100% - 278px);
+    }
+
+    .card-group{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .card-group .card:nth-child(2){
+        display: inline-block;
+    }
+
+    .card:nth-child(2) .card-cont{
+        padding-top: 26px;
+    }
+
+    .card:last-child .card-cont{
+        padding-top: 26px;
+    }
+    
+    .card-group .card:last-child{
+        display: inline-block;
+    }
+
+    .tendencias .card{
+        width: 33%;
+    }
+/*BLOG*/
+    .blog{
+        max-width: none;
+    }
+
+    .blog h2{
+        padding-left: 0;
+    }
+    .blog .container{
+        width: calc(100% - 278px);
+        margin: 0 auto;
+        margin-top: -170px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-main{
+        width: 60%;
+    }
+
+    .blog-sec{
+        width: 35%;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 10px;
+    }
+
+    .blog-item-sec{
+        height: 272px;
+    }
+
+    .blog-item-sec img{
+        width: 100%;
+        height: 201px;
+    }
+
+    .blog-item-sec h6{
+        padding-top: 15px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .blog-item-sec .blog-sec-bottom{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .blog-sec-bottom img{
+        width: 16px;
+        height: 16px;
+        padding: 5px 5px 0 0;
+    }
+
+    .blog-item-sec p{
+        font-size: 13px;
+        line-height: 26px;
+        font-weight: normal;
+        color: #CBD0D3;
+    }
+/*FOOTER*/
+    footer{
+        height: 96px;
+    }
+
+    footer .container{
+        height: 100%;
+        width: calc(100% - 278px);
+    }
+    .footer-l img{
+        height: 16px;
+        width: 76px;
+    }
+
+    .footer-r img{
+        height: 16px;
+         width: 16px;
+    }
+
+    .blog p span{
+        display: inline-block;
+        padding: 0 50px 0 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* .tendencias .card-group{
+        justify-content: space-between;
+
+    }
+    
+    .card-group .card:nth-child(2){
+        display: initial;
+    }
+    
+    .card-group .card:last-child{
+        display: initial;
+    }*/
